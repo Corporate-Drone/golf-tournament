@@ -1,0 +1,174 @@
+@import '../styles/_mixins';
+@import '../styles/_variables';
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.Home {
+    color: $color-primary-dark;
+    img {
+        width: 200px;
+    }
+
+    &-top,
+    &-bottom { 
+        @include center-vertically;
+        min-height: 100vh;    
+    }
+
+    &-top {
+        h3 {
+            margin-top: -1rem;
+            font-size: 16px;
+        }
+    }
+    &-bottom-contact {
+        color: $color-primary-dark;
+        font-weight: bold;
+    }
+
+    &-top-logo {
+        width: 360px;
+        position: relative;
+        &-title {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            margin: auto;
+            font-size: 48px;
+            font-family: 'Merriweather', serif;
+            font-weight: bold;
+        }
+    }
+
+    &-top-golf {
+        color: $color-primary;
+    }
+
+    &-info {
+        @include center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: auto;
+        margin-top: 1rem;
+        background-color: rgba(255, 255, 255, 0.6);
+        border: 3px solid $color-primary;
+        border-radius: 1rem;
+        padding: 1rem;
+
+        &-container {
+            padding-right: 1.5rem;
+        }
+    }
+
+    &-register {
+        margin-top: 5rem;
+        margin-bottom: 8rem;
+    }
+
+    &-down {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 4rem;
+        color: $color-primary;
+        -webkit-animation: action 0.5s infinite  alternate;
+        animation: action 0.5s infinite  alternate;
+    }
+
+    &-details {
+        color: $color-primary;
+        font-weight: bold;
+        margin-bottom: 3rem;
+        border-bottom: 3px solid #fff;
+    }
+
+    &-detail {
+        background-color: rgba(255, 255, 255, 0.6);
+        border: 3px solid $color-primary;
+        border-radius: 1rem;
+        color: $color-primary-dark;
+        font-weight: bold;
+        padding: 2rem;
+        width: 50%;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+
+        &-icon {
+            position: relative;
+            top: -50px;
+            color: $color-primary;
+        }
+
+        &-info,
+        &-time,
+        &-prizes {
+            margin-top: -45px;
+        }
+
+        h3 {
+            margin-top: -2rem;
+            font-weight:bolder;
+        }
+    }
+
+    .bottom-small {
+        width: 35%;
+    }
+}
+
+.fa-info {
+    top: -65px;
+}
+
+.fas {
+    color: $color-primary;
+}
+
+// h3 {
+//     margin-top: -2rem;
+//     font-weight:bolder;
+// }
+
+a {
+    color: inherit;
+}
+
+@media (max-width: 700px) {
+    .Home {
+        &-info {
+            margin-top: 0;
+            width: 85%;
+
+            &-container {
+                padding-right: 1.1rem;
+            }
+        }
+
+        &-top-golf {
+            margin-bottom: 1rem;
+        }
+
+            &-register {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+        &-details {
+            margin-bottom: 2rem;
+        }
+
+        .bottom-small {
+            width: 50%;
+        }
+    }
+}

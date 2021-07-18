@@ -1,0 +1,34 @@
+@import '../styles/_mixins';
+@import '../styles/_variables';
+
+.Attendees {
+    @include center-vertically;
+    min-height: 100vh;
+    color: $color-primary-dark;
+    font-weight: bold;
+    
+
+    &-container {
+        text-align: center;
+        background-color: rgba(250, 250, 250, 0.6);
+        border-radius: 1rem;
+        width: 70%;
+        padding: 2rem;
+        margin-bottom: 8rem;
+        border: 2px solid $color-primary;
+
+        table {
+            width: 95%;
+
+            &, 
+            th, 
+            td {
+                margin: auto;
+                border: 1px solid rgba(26, 17, 14, 0.6);
+                
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,24 @@
+@import '../../styles/_variables';
+
+.Button {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    background-color: #fff;
+    border: 2px solid $color-primary-dark;
+    color: $color-primary-dark;
+
+    &:hover {
+        background-color: rgb(216, 214, 214);
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: #fff;
+    }
+
+    &-form {
+        margin-bottom: 1.5rem;
+    }
+}

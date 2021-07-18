@@ -1,0 +1,9 @@
+@import './styles/_mixins';
+
+.App {
+  @include center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
