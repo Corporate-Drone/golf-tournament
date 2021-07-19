@@ -31,17 +31,17 @@ function Attendees() {
         // getAttendees();
     })
 
-    let allAttendees;
+    // let allAttendees;
 
-    if (!isLoading) {
-        allAttendees = loadedAttendees.map(person => (
-            <tr>
-                <td>{person.first + " " + person.last}</td>
-                <td>{person.contact}</td>
-                <td>{person.handicap}</td>
-            </tr>
-        ))
-    }
+    // if (!isLoading) {
+    //     allAttendees = loadedAttendees.map(person => (
+    //         <tr>
+    //             <td>{person.first + " " + person.last}</td>
+    //             <td>{person.contact}</td>
+    //             <td>{person.handicap}</td>
+    //         </tr>
+    //     ))
+    // }
 
     return (
         <div className="Attendees">
@@ -54,7 +54,7 @@ function Attendees() {
                         <th>Phone</th>
                         <th>Handicap</th>
                     </tr>
-                    {allAttendees}
+                    {/* {allAttendees} */}
                 </table>
             </div>}
 
