@@ -7,7 +7,7 @@ function Attendees() {
     const [loadedAttendees, setLoadedAttendees] = useState();
     const [isLoading, setLoading] = useState(true);
 
-    const getAttendees = async (userId, type = 'chirps') => {
+    const getAttendees = async () => {
         setLoading(true);
         try {
             const res = await axios.get("/attendees")
@@ -28,8 +28,8 @@ function Attendees() {
     useEffect(() => {
         document.body.style.background = "url('/attendeesBackground.jpg')";
         document.body.style.backgroundSize = "cover";
-        getAttendees();
-    }, [])
+        // getAttendees();
+    },[])
 
     let allAttendees;
 
@@ -45,7 +45,7 @@ function Attendees() {
 
     return (
         <div className="Attendees">
-            {isLoading && <Loader/>}
+            {isLoading && <Loader />}
             {!isLoading && <div className="Attendees-container">
                 <h1>Attendees</h1>
                 <table>
