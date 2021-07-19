@@ -15,7 +15,7 @@ function Attendees() {
 
                     if (response.status === 200) {
                         setLoadedAttendees(response.data)
-                    }
+                    } 
                 })
         } catch (error) {
             console.log(error)
@@ -28,39 +28,26 @@ function Attendees() {
     useEffect(() => {
         document.body.style.background = "url('/attendeesBackground.jpg')";
         document.body.style.backgroundSize = "cover";
-        // getAttendees();
-    })
+        getAttendees();
+    },[])
 
-    // let allAttendees;
 
-    // if (!isLoading) {
-    //     allAttendees = loadedAttendees.map(person => (
-    //         <tr>
-    //             <td>{person.first + " " + person.last}</td>
-    //             <td>{person.contact}</td>
-    //             <td>{person.handicap}</td>
-    //         </tr>
-    //     ))
-    // }
+    let allAttendees;
+
+    if (!isLoading) {
+        allAttendees = loadedAttendees.map(person => (
+            <tr>
+                <td>{person.first + " " + person.last}</td>
+                <td>{person.contact}</td>
+                <td>{person.handicap}</td>
+            </tr>
+        ))
+    }
 
     return (
-        // <div className="Attendees">
-        //     {isLoading && <Loader />}
-        //     {!isLoading && <div className="Attendees-container">
-        //         <h1>Attendees</h1>
-        //         <table>
-        //             <tr>
-        //                 <th>Name</th>
-        //                 <th>Phone</th>
-        //                 <th>Handicap</th>
-        //             </tr>
-        //             {/* {allAttendees} */}
-        //         </table>
-        //     </div>}
-
-        // </div>
         <div className="Attendees">
-            <div className="Attendees-container">
+            {isLoading && <Loader />}
+            {!isLoading && <div className="Attendees-container">
                 <h1>Attendees</h1>
                 <table>
                     <tr>
@@ -68,8 +55,9 @@ function Attendees() {
                         <th>Phone</th>
                         <th>Handicap</th>
                     </tr>
+                    {allAttendees}
                 </table>
-            </div>
+            </div>}
 
         </div>
     )
