@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Register from './pages/Register';
@@ -11,7 +12,7 @@ import './_App.scss'
 function App() {
   return (
     <div className="App">
-      <Router>
+      <HashRouter>
         <Header />
         <Switch>
           <Route path="/" exact>
@@ -25,7 +26,7 @@ function App() {
           </Route>
           <Redirect to="/"/>
         </Switch>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
