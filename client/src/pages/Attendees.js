@@ -15,7 +15,7 @@ function Attendees() {
 
                     if (response.status === 200) {
                         setLoadedAttendees(response.data)
-                    } 
+                    }
                 })
         } catch (error) {
             console.log(error)
@@ -44,9 +44,23 @@ function Attendees() {
     // }
 
     return (
+        // <div className="Attendees">
+        //     {isLoading && <Loader />}
+        //     {!isLoading && <div className="Attendees-container">
+        //         <h1>Attendees</h1>
+        //         <table>
+        //             <tr>
+        //                 <th>Name</th>
+        //                 <th>Phone</th>
+        //                 <th>Handicap</th>
+        //             </tr>
+        //             {/* {allAttendees} */}
+        //         </table>
+        //     </div>}
+
+        // </div>
         <div className="Attendees">
-            {isLoading && <Loader />}
-            {!isLoading && <div className="Attendees-container">
+            <div className="Attendees-container">
                 <h1>Attendees</h1>
                 <table>
                     <tr>
@@ -54,9 +68,8 @@ function Attendees() {
                         <th>Phone</th>
                         <th>Handicap</th>
                     </tr>
-                    {/* {allAttendees} */}
                 </table>
-            </div>}
+            </div>
 
         </div>
     )
