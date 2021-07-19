@@ -12,7 +12,7 @@ function Home() {
     useEffect(() => {
         document.body.style.background = "url('/homeBackground.jpg')";
         document.body.style.backgroundSize = "cover";
-    })
+    },[])
 
     const buttonClick = () => {
         history.push('/register');

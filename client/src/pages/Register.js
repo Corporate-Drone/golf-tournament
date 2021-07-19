@@ -9,7 +9,7 @@ function Register() {
         document.body.style.background = "url('/registrationBackground.jpg')";
         
         document.body.style.backgroundSize = "cover";
-    })
+    },[])
 
     return (
         <div className="Register">
