@@ -29,7 +29,7 @@ function Attendees() {
         document.body.style.background = "url('/attendeesBackground.jpg')";
         document.body.style.backgroundSize = "cover";
         // getAttendees();
-    },[])
+    })
 
     let allAttendees;
 
