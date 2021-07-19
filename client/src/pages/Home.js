@@ -12,7 +12,7 @@ function Home() {
     useEffect(() => {
         document.body.style.background = "url('/homeBackground.jpg')";
         document.body.style.backgroundSize = "cover";
-    },[])
+    }, [])
 
     const buttonClick = () => {
         history.push('/register');
@@ -34,20 +34,26 @@ function Home() {
                         <div className="Home-info-container">
                             <i className="fas fa-calendar-alt fa-2x"></i>
                             <h2>Date</h2>
-                            <div>Saturday</div>
-                            <div>August 28, 2021</div>
+                            <p>Saturday
+                                <br />
+                                August 28, 2021
+                            </p>
                         </div>
                         <div className="Home-info-container">
                             <i className="fas fa-map-marker-alt fa-2x"></i>
                             <h2>Location</h2>
-                            <div>Lincoln Hills Golf Course</div>
-                            <div>Lincoln, CA</div>
+                            <p>Lincoln Hills Golf Course
+                                <br />
+                                Lincoln, CA
+                            </p>
                         </div>
                         <div className="Home-info-container">
                             <i className="fas fa-dollar-sign fa-2x"></i>
                             <h2>Fee</h2>
-                            <div>$100</div>
-                            <div>Per Person*</div>
+                            <p>$100
+                                <br />
+                                Per Person*
+                            </p>
                         </div>
                     </div>
                 </Fade>
@@ -63,36 +69,48 @@ function Home() {
                         <i className="fas fa-info fa-3x Home-detail-icon"></i>
                         <div className="Home-detail-info">
                             <h3>Tournament Fee</h3>
-                            <div>$100 per person</div>
+                            <p>$100 per person</p>
                             <br />
-                            <div>*includes: Breakfast, catered lunch,<br />green fee, cart, range balls, and water</div>
+                            <p>*includes: Breakfast, catered lunch,<br />green fee, cart, range balls, and water</p>
                         </div>
                     </div>
-                    <div className="Home-detail bottom-small">
-                        <i className="fas fa-hourglass-half fa-2x Home-detail-icon"></i>
-                        <div className="Home-detail-time">
-                            <h3>Time</h3>
-                            <div>Check in starts at 7:30 AM</div>
-                            <div>Shot Gun starts at 8:30 AM</div>
+                    <div className="Home-detail-row">
+                        <div className="Home-detail bottom-small">
+                            <i className="fas fa-hourglass-half fa-2x Home-detail-icon"></i>
+                            <div className="Home-detail-time">
+                                <h3>Time</h3>
+                                <p>Check in starts at 7:30 AM
+                                    <br />
+                                    Shot Gun starts at 8:30 AM</p>
+                            </div>
+                        </div>
+                        <div className="Home-detail bottom-small">
+                            <i className="fas fa-trophy fa-2x Home-detail-icon"></i>
+                            <div className="Home-detail-prizes">
+                                <h3>Prizes</h3>
+                                <p>Hole in one: placeholder
+                                    <br />
+                                    Lowest Score: placeholder
+                                    <br />
+                                    Sandy par: placeholder
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div className="Home-detail bottom-small">
-                        <i className="fas fa-trophy fa-2x Home-detail-icon"></i>
-                        <div className="Home-detail-prizes">
-                            <h3>Prizes</h3>
-                            <div>Hole in one: placeholder</div>
-                            <div>Lowest Score: placeholder</div>
-                            <div>Sandy par: placeholder</div>
+                    <div className="Home-detail bottom-med">
+                        <i className="fas fa-hand-holding-usd fa-2x Home-detail-icon"></i>
+                        <h3>Donation</h3>
+                        <div className="Home-bottom-contact">
+                            <a href="mailto:UERM87foundation@gmail.com">Email us</a> for donations or sponsorship contributions. All fees, contributions, and donations are tax deductible as UERM87Foundation is a nonprofit 501c3 corporation.
                         </div>
                     </div>
-                    <div className="Home-detail bottom-small">
+                    <div className="Home-detail bottom-med">
                         <i className="fas fa-mobile fa-2x Home-detail-icon"></i>
                         <h3>Contact</h3>
                         <div className="Home-bottom-contact">
                             Doc Chito and Willie <a href="tel:9168471716">(916) 847-1716</a>
                         </div>
                     </div>
-
                 </div>
             </Fade>
 

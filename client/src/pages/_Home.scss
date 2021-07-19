@@ -119,10 +119,27 @@
             margin-top: -2rem;
             font-weight:bolder;
         }
+
+        &-row {
+            display: flex;
+            flex-direction: row;
+
+            .bottom-small {
+                width: 25%;
+            }
+        }
     }
 
-    .bottom-small {
+    .bottom-med {
         width: 35%;
+    }
+
+    // .bottom-small {
+    //     width: 35%;
+    // }
+
+    p {
+        margin: 0;
     }
 }
 
@@ -163,6 +180,11 @@ a {
                 margin-bottom: 1rem;
             }
 
+        &-detail {
+            &-row {
+                flex-direction: column;
+            }
+        }
         &-details {
             margin-bottom: 2rem;
         }
