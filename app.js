@@ -37,10 +37,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true })); //used to parse req.body
 app.use(express.static(path.join(__dirname, "client", "build")))
 
-// app.get('/attendees', async (req, res) => {
-//     const allAttendees = await Attendee.find({});
-//     res.send(allAttendees);
-// });
+app.get('/attendees', async (req, res) => {
+    const allAttendees = await Attendee.find({});
+    res.send(allAttendees);
+});
 
 app.post('/register', [
     check('first', 'First name must be at least 1 character and less than 60 characters.').isLength({ min: 1, max: 60 }),
