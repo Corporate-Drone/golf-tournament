@@ -131,7 +131,8 @@
         grid-gap: 0px; 
 
         &.active {
-            background: rgba(250, 250, 250, 0.85);
+            background: rgba(250, 250, 250, 1);
+            box-shadow: 1px 1px 9px 1px $color-primary-dark;
             left: 0;
             opacity: 1;
             transition: all 0.5s ease;
