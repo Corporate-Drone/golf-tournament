@@ -6,8 +6,7 @@ import RegisterForm from '../components/Form/RegisterForm';
 function Register() {
 
     useEffect(() => {
-        document.body.style.background = "url('/registrationBackground.jpg')";
-        
+        document.body.style.background = "url('/registrationBackground.jpg')";    
         document.body.style.backgroundSize = "cover";
     },[])
 

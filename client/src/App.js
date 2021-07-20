@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react'
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 import { HashRouter } from 'react-router-dom';
 
@@ -10,6 +11,12 @@ import './_App.scss'
 
 
 function App() {
+  //preload background images
+  useEffect(() => {
+    document.body.style.background = "url('/attendeesBackground.jpg')";
+    document.body.style.background = "url('/registrationBackground.jpg')";
+    document.body.style.background = "url('/homeBackground.jpg')";
+  }, [])
   return (
     <div className="App">
       <HashRouter>
@@ -24,7 +31,7 @@ function App() {
           <Route path="/attendees" exact>
             <Attendees />
           </Route>
-          <Redirect to="/"/>
+          <Redirect to="/" />
         </Switch>
       </HashRouter>
     </div>

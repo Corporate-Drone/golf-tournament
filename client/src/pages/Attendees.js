@@ -28,9 +28,6 @@ function Attendees() {
     useEffect(() => {
         document.body.style.background = "url('/attendeesBackground.jpg')";
         document.body.style.backgroundSize = "cover";
-    })
-
-    useEffect(() => {
         getAttendees();
     },[])
 
