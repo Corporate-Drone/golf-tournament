@@ -102,6 +102,10 @@
         margin: auto;
         margin-top: 1rem;
         margin-bottom: 2rem;
+        transition: 0.5s;
+        &:hover {
+            transform: translateY(-10px);
+        }
 
         &-icon {
             position: relative;
@@ -134,10 +138,6 @@
         width: 35%;
     }
 
-    // .bottom-small {
-    //     width: 35%;
-    // }
-
     p {
         margin: 0;
     }
@@ -149,12 +149,11 @@
 
 .fas {
     color: $color-primary;
+    transition: 0.5s;
+    &:hover {
+        transform: translateY(-10px);
+    }
 }
-
-// h3 {
-//     margin-top: -2rem;
-//     font-weight:bolder;
-// }
 
 a {
     color: inherit;
