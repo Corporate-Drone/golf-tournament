@@ -10,12 +10,10 @@
     color: $color-primary-dark;
 
     &:hover {
-        background-color: rgb(216, 214, 214);
+        transition: 0.5s;
+        background-color: $color-primary-dark;
+        color: $color-primary;
         cursor: pointer;
-    }
-
-    &:active {
-        background-color: #fff;
     }
 
     &-form {

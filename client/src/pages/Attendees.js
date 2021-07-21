@@ -15,7 +15,7 @@ function Attendees() {
 
                     if (response.status === 200) {
                         setLoadedAttendees(response.data)
-                    } 
+                    }
                 })
         } catch (error) {
             console.log(error)
@@ -29,14 +29,14 @@ function Attendees() {
         document.body.style.background = "url('/attendeesBackground.jpg')";
         document.body.style.backgroundSize = "cover";
         getAttendees();
-    },[])
+    }, [])
 
 
     let allAttendees;
 
     if (!isLoading) {
         allAttendees = loadedAttendees.map(person => (
-            <tr>
+            <tr key={person.first}>
                 <td>{person.first + " " + person.last}</td>
                 <td>{person.contact}</td>
                 <td>{person.handicap}</td>
@@ -50,12 +50,16 @@ function Attendees() {
             {!isLoading && <div className="Attendees-container">
                 <h1>Attendees</h1>
                 <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Phone</th>
-                        <th>Handicap</th>
-                    </tr>
-                    {allAttendees}
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Handicap</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {allAttendees}
+                    </tbody>
                 </table>
             </div>}
 
