@@ -38,7 +38,7 @@ function Attendees() {
         allAttendees = loadedAttendees.map(person => (
             <tr key={person.first}>
                 <td>{person.first + " " + person.last}</td>
-                <td>{person.contact}</td>
+                <td><a href={`tel:${person.contact}`}>{person.contact}</a></td>
                 <td>{person.handicap}</td>
             </tr>
         ))

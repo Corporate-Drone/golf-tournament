@@ -7,7 +7,7 @@ import * as Yup from 'yup';
 import Button from '../uiElements/Button';
 import './_RegisterForm.scss'
 
-const phoneRegExp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
+const phoneRegExp = /^(1-)?\d{3}-\d{3}-\d{4}$/
 
 function RegisterForm() {
     const history = useHistory();
@@ -56,7 +56,7 @@ function RegisterForm() {
                         .max(14, 'Must be less than 14 characters.')
                         .required("Required"),
                     contact: Yup.string()
-                        .matches(phoneRegExp, 'Phone number is not valid'),
+                        .matches(phoneRegExp, 'Please enter as ###-###-####'),
                 })}
             >
                 {props => {
