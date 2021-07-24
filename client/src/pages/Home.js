@@ -71,7 +71,7 @@ function Home() {
                             <h3>Tournament Fee</h3>
                             <p>$100 per person</p>
                             <br />
-                            <p>*includes: Breakfast, catered lunch,<br />green fee, cart, range balls, and water</p>
+                            <p>*Includes: Breakfast, catered lunch,<br />green fee, cart, range balls, and water</p>
                         </div>
                     </div>
                     <div className="Home-detail-row">
@@ -81,18 +81,22 @@ function Home() {
                                 <h3>Time</h3>
                                 <p>Check in starts at 7:30 AM
                                     <br />
-                                    Shot Gun starts at 8:30 AM</p>
+                                    Shotgun starts at 8:30 AM</p>
                             </div>
                         </div>
                         <div className="Home-detail bottom-small">
                             <i className="fas fa-trophy fa-2x Home-detail-icon"></i>
                             <div className="Home-detail-prizes">
                                 <h3>Prizes</h3>
-                                <p>Hole in one: placeholder
+                                <p>Hole in one
                                     <br />
-                                    Lowest Score: placeholder
+                                    Highest Score
                                     <br />
-                                    Sandy par: placeholder
+                                    Lowest Score
+                                    <br />
+                                    Sandy Par
+                                    <br />
+                                    Best Dressed
                                 </p>
                             </div>
                         </div>
@@ -108,7 +112,9 @@ function Home() {
                         <i className="fas fa-mobile fa-2x Home-detail-icon"></i>
                         <h3>Contact</h3>
                         <div className="Home-bottom-contact">
-                            Doc Chito and Willie <a href="tel:9168471716">(916) 847-1716</a>
+                            Doc Chito or Willie
+                            <br />
+                            <a href="tel:9168471716">(916) 847-1716</a>
                         </div>
                     </div>
                 </div>

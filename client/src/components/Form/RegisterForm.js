@@ -50,10 +50,10 @@ function RegisterForm() {
 
                 validationSchema={Yup.object().shape({
                     first: Yup.string()
-                        .max(15, 'Must be less than 60 characters.')
+                        .max(14, 'Must be less than 14 characters.')
                         .required("Required"),
                     last: Yup.string()
-                        .max(1, 'Must be 1 character.')
+                        .max(14, 'Must be less than 14 characters.')
                         .required("Required"),
                     contact: Yup.string()
                         .matches(phoneRegExp, 'Phone number is not valid'),
@@ -75,7 +75,7 @@ function RegisterForm() {
                         <form onSubmit={handleSubmit}>
                             <div className="RegisterForm-First">
                                 <label htmlFor="first">
-                                    First name
+                                    First Name
                                 </label>
                                 <input
                                     id="first"
@@ -96,7 +96,7 @@ function RegisterForm() {
 
                             <div className="RegisterForm-Last">
                                 <label htmlFor="last">
-                                    Last Initial
+                                    Last Name
                                 </label>
                                 <input
                                     id="last"

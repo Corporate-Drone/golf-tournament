@@ -43,8 +43,8 @@ app.get('/attendees', async (req, res) => {
 });
 
 app.post('/register', [
-    check('first', 'First name must be at least 1 character and less than 60 characters.').isLength({ min: 1, max: 60 }),
-    check('last', 'Last initial can only be 1 character.').isLength({ max: 1 })
+    check('first', 'First name must be at least 1 character and less than 14 characters.').isLength({ min: 1, max: 14 }),
+    check('last', 'Last name must be at least 1 character and less than 14 characters.').isLength({ min: 1, max: 14 })
 ], async (req, res) => {
     try {
         const errors = validationResult(req);

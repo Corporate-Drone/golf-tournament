@@ -5,7 +5,7 @@
     @include center-vertically;
     min-height: 100vh;
     color: $color-primary-dark;
-    font-weight: bold;
+    // font-weight: bold;
     
 
     &-container {
@@ -24,8 +24,16 @@
             &, 
             th, 
             td {
+                text-align: left;
                 margin: auto;
                 border: 1px solid rgba(26, 17, 14, 0.6);
+                font-weight: 600;
+                
+            }
+            
+            th {
+                // text-align: center;
+                font-weight: bold;
                 
             }
         }
@@ -33,3 +41,11 @@
 
     }
 }
+
+@media (max-width: 700px) {
+    .Attendees {
+        &-container {
+            width: 80%;
+        }
+    }
+ }
