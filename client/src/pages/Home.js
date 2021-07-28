@@ -58,7 +58,7 @@ function Home() {
                     </div>
                 </Fade>
                 <Fade direction="up" triggerOnce>
-                    <Button buttonClick={buttonClick} className="Button Home-register" text="Register Now" />
+                    <Button buttonClick={buttonClick} className="Button Home-register" text="Register by Aug 13!" />
                     <div className="Home-details">Details</div>
                     <i className="fas fa-chevron-down fa-3x Home-down"></i>
                 </Fade>
@@ -87,7 +87,7 @@ function Home() {
                         <div className="Home-detail bottom-small">
                             <i className="fas fa-trophy fa-2x Home-detail-icon"></i>
                             <div className="Home-detail-prizes">
-                                <h3>Prizes</h3>
+                                <h3>Awards</h3>
                                 <p>Hole in one
                                     <br />
                                     Highest Score
@@ -103,7 +103,7 @@ function Home() {
                         <i className="fas fa-hand-holding-usd fa-2x Home-detail-icon"></i>
                         <h3>Donation</h3>
                         <div className="Home-bottom-contact">
-                            <a href="mailto:UERM87foundation@gmail.com">Email us</a> for donations or sponsorship contributions. All fees, contributions, and donations are tax deductible as UERM87Foundation is a nonprofit 501c3 corporation.
+                            Call the number below for donations or sponsorship contributions. All fees, contributions, and donations are tax deductible as UERM87Foundation is a nonprofit 501c3 corporation.
                         </div>
                     </div>
                     <div className="Home-detail bottom-med">
