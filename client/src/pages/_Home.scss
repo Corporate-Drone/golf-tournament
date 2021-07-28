@@ -141,7 +141,7 @@
             flex-direction: row;
 
             .bottom-small {
-                width: 25%;
+                width: 30%;
             }
         }
     }
@@ -157,6 +157,10 @@
 
 .fa-info {
     top: -65px;
+}
+
+.fa-money-bill {
+    top: -60px;
 }
 
 .fas {
@@ -198,6 +202,15 @@ a {
                 flex-direction: column;
             }
         }
+
+        .bottom-med {
+            width: 55%;
+        }
+
+        .bottom-small {
+            width: 25%;
+        }
+
         &-details {
             margin-bottom: 2rem;
         }

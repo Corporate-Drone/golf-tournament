@@ -58,7 +58,7 @@ function Home() {
                     </div>
                 </Fade>
                 <Fade direction="up" triggerOnce>
-                    <Button buttonClick={buttonClick} className="Button Home-register" text="Register by Aug 13!" />
+                    <Button buttonClick={buttonClick} className="Button Home-register" text="Register Now" />
                     <div className="Home-details">Details</div>
                     <i className="fas fa-chevron-down fa-3x Home-down"></i>
                 </Fade>
@@ -71,7 +71,14 @@ function Home() {
                             <h3>Tournament Fee</h3>
                             <p>$100 per person</p>
                             <br />
-                            <p>*Includes: Breakfast, catered lunch,<br />green fee, cart, range balls, and water</p>
+                            <p>*Includes: Coffee/donuts, catered lunch,<br />green fee, cart, range balls, raffle tickets, and water</p>
+                        </div>
+                    </div>
+                    <div className="Home-detail">
+                        <i className="fas fa-exclamation fa-3x Home-detail-icon"></i>
+                        <div className="Home-detail-info">
+                            <h3>Registration Deadline</h3>
+                            <p>Please register by August 13, 2021</p>
                         </div>
                     </div>
                     <div className="Home-detail-row">
@@ -79,7 +86,7 @@ function Home() {
                             <i className="fas fa-hourglass-half fa-2x Home-detail-icon"></i>
                             <div className="Home-detail-time">
                                 <h3>Time</h3>
-                                <p>Check in starts at 7:30 AM
+                                <p>Check in starts at 7:00 AM
                                     <br />
                                     Shotgun starts at 8:30 AM</p>
                             </div>
@@ -88,11 +95,13 @@ function Home() {
                             <i className="fas fa-trophy fa-2x Home-detail-icon"></i>
                             <div className="Home-detail-prizes">
                                 <h3>Awards</h3>
-                                <p>Hole in one
+                                <p>Lowest Score
                                     <br />
                                     Highest Score
                                     <br />
-                                    Lowest Score
+                                    Longest Drive
+                                    <br />
+                                    Closest to the pin
                                     <br />
                                     And many more
                                 </p>
@@ -101,9 +110,9 @@ function Home() {
                     </div>
                     <div className="Home-detail bottom-med">
                         <i className="fas fa-hand-holding-usd fa-2x Home-detail-icon"></i>
-                        <h3>Donation</h3>
+                        <h3>Donation/Sponsorship</h3>
                         <div className="Home-bottom-contact">
-                            Call the number below for donations or sponsorship contributions. All fees, contributions, and donations are tax deductible as UERM87Foundation is a nonprofit 501c3 corporation.
+                            Call the number below for donations or sponsorship contributions. All fees, contributions, and donations are tax deductible as UERM87Foundation is a nonprofit 501c3 organization.
                         </div>
                     </div>
                     <div className="Home-detail bottom-med">
