@@ -94,7 +94,7 @@ function Home() {
                                     <br />
                                     Lowest Score
                                     <br />
-                                    Sandy Par
+                                    And many more
                                 </p>
                             </div>
                         </div>
