@@ -71,7 +71,7 @@ function Home() {
                             <h3>Tournament Fee</h3>
                             <p>$100 per person</p>
                             <br />
-                            <p>*Includes: Coffee/donuts, catered lunch,<br />green fee, cart, range balls, raffle tickets, and water</p>
+                            <p>*Includes: Coffee/señorita bread, catered lunch,<br />green fee, cart, range balls, raffle tickets, and water</p>
                         </div>
                     </div>
                     <div className="Home-detail">
