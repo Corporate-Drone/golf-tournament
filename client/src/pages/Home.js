@@ -78,7 +78,7 @@ function Home() {
                         <i className="fas fa-exclamation fa-3x Home-detail-icon"></i>
                         <div className="Home-detail-info">
                             <h3>Registration Deadline</h3>
-                            <p>Please register by August 22, 2021</p>
+                            <p>Please register by August 28, 2021</p>
                         </div>
                     </div>
                     <div className="Home-detail-row">
