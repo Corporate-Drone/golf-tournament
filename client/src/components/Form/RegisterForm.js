@@ -51,10 +51,10 @@ function RegisterForm() {
                 validationSchema={Yup.object().shape({
                     first: Yup.string()
                         .max(14, 'Must be less than 14 characters.')
-                        .required("Required"),
+                        .required(<i class="fas fa-exclamation-circle required"> Required</i>),
                     last: Yup.string()
                         .max(14, 'Must be less than 14 characters.')
-                        .required("Required"),
+                        .required(<i class="fas fa-exclamation-circle required"> Required</i>),
                     contact: Yup.string()
                         .matches(phoneRegExp, 'Please enter as ###-###-####'),
                 })}
